@@ -3,30 +3,30 @@
 # EXERCICE 1 
 Il est question d'exécuter 6 programmes et donner une explication succincte du résultat obtenu.
 
-## Programme 1
+#### Programme 1
 Ce programme ne peut être exécuté, car il y a une erreur à la ligne 4 du programme :
 ? int C=!-- A /++! B; ?. L'association des opérateurs de cette manière-là ne permet pas de retourner un résultat.
 
-## Programme 2
+#### Programme 2
 A && B => 0 (Vrai en booléen)
 !0 && (C++) && !(D++) => 1 ( C++=-10 différent de 0 et de 2)
 Avec le OU de ces deux relations le premier printf renvoie 1.
 Le deuxième printf renvoie les valeurs de C et D pas encore incrémentées d'où les valeurs -10 et 2 sont affichées.
 
-## Programme 3
+#### Programme 3
 Dans le premier printf, on a la valeur de ++ q* q ++ qui s?affiche qui est ici 4, car *++q = -2 multiplié par * q ++ = -2 donne 4.
 Le deuxième printf affiche la valeur de *q qui est 3 parce que *(q++) est une opération de post-incrémentation.
 
-## Programme 4
+#### Programme 4
 *(q) & *(q++) => 1
 *(q++) => -2
 Or 1 OU -2 => 1 + (-2) => d = -1 (premier printf)
 Le deuxième printf affiche le contenu du pointeur q qui est 3, car d implémente deux fois la position pointée par q.
 
-## Programme 5
+#### Programme 5
 On regarde si (++a) &&(--b) est vérifié ou non. Ici (++a) = -7 ET (--b) = 2 ce qui est vrai. Ainsi la condition  ?b - -? est réalisée. Donc c=2, car b - - est une opération post-incrémentation et b = 1.
 
-## Programme 6
+#### Programme 6
 Résultat obtenu : a = -4
 
 
